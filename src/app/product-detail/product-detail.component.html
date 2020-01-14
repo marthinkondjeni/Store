@@ -1,0 +1,134 @@
+<br>
+<div class="page-header">
+    <div class="page-header__container container">
+        <div class="page-header__breadcrumb">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="">{{Product.Category}}</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">{{Product.Name}}</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</div>
+
+
+<div class="block">
+    <div class="container">
+        <div class="product product--layout--standard">
+            <div class="product__content">
+
+                <div class="product__gallery">
+                    <div class="product-gallery__featured">
+                        <div class="owl-carousel owl-loaded owl-drag">
+                            <div class="image-item">
+                                <a href="assets/Images/products/{{Product.Gallery[0]}}" target="_blank">
+                                    <img src="assets/Images/products/{{Product.Gallery[0]}}" alt=""
+                                        class="Single_Image_product">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__info">
+                    <h1 class="product__name">{{Product.Name}}</h1>
+
+                    <div class="product__description">
+                        {{Product.Description}}
+                    </div>
+                </div>
+                <ul class="product__meta">
+                    <li class="product__meta-availability">
+                        Availability:
+                        <span class="text-success">{{Product.Meta.Availability}}</span>
+                    </li>
+                    <li>
+                        Brand:
+                        <a href="">{{Product.Meta.Brand}}</a>
+                    </li>
+                    <li>
+                        SKU: 83690/32
+                    </li>
+                </ul>
+
+                <div class="product__sidebar">
+                    <div class="product__prices">
+                        N$ {{Product.Price.NormalPrice}}
+                    </div>
+                    <form class="product__options">
+                        <div class="form-group product__option">
+                            <label class="product__option-label">Color</label>
+                            <div class="input-radio-color">
+                                <div class="input-radio-color__list">
+                                    <label class="input-radio-color__item input-radio-color__item--white"
+                                        style="color: #fff;" ngbTooltip="White">
+                                        <input type="radio" name="color">
+                                        <span></span>
+                                    </label>
+                                    <label class="input-radio-color__item" style="color: #ffd333;" data-toggle="tooltip"
+                                        title="" ngbTooltip="Yellow"><input type="radio" name="color">
+                                        <span></span>
+                                    </label>
+                                    <label class="input-radio-color__item" style="color: #ff4040;" data-toggle="tooltip"
+                                        title="" ngbTooltip="Red"><input type="radio" name="color">
+                                        <span></span></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group product__option">
+                            <label class="product__option-label">Material</label>
+                            <div class="input-radio-label">
+                                <div class="input-radio-label__list">
+                                    <label>
+                                        <input type="radio" name="material">
+                                        <span>Metal</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="material">
+                                        <span>Wood</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="material">
+                                        <span>Plastic</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group product__option">
+                            <label class="product__option-label" for="product-quantity">Quantity</label>
+                            <div class="product__actions">
+                                <div class="product__actions-item">
+                                    <div class="input-number product__quantity">
+                                        <input id="product-quantity"
+                                            class="input-number__input form-control form-control-lg" type="number"
+                                            min="1" value="1">
+                                    </div>
+                                </div>
+                                <div class="product__actions-item product__actions-item--addtocart">
+                                    <button class="btn btn-success btn-lg" style="border-radius: 2px;">Add to
+                                        cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="block">
+    <div class=" container">
+        <div class="block-header">
+            <h3 class="block-header__title">Related Products</h3>
+            <div  class="block-header__divider"></div>
+        </div>
+    </div>
+</div>
